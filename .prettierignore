@@ -1,0 +1,28 @@
+# Dependencies
+node_modules
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Build / Coverage
+dist
+build
+coverage
+
+# Environment configs
+.env
+.env.*
+*.local
+
+# Logs
+*.log
+
+# Editor / OS files
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+
+# Public assets
+public/*
+*.svg
