@@ -1,20 +1,7 @@
-require('dotenv').config()
-const express = require('express');
-const app = express();
-const port = process.env.PORT;
+import dotenv from "dotenv";
+dotenv.config();
+import connectDB from "./db/index.js";
 
-app.get('/', (req, res) => {
-  res.send('Hello World!');
-});
 
-app.get('/twitter', (req, res)=>{
-    res.send('you are on twitter page');
-});
+connectDB();
 
-app.get('/facebook', (req, res)=>{
-    res.send('you are on facebook page');
-});
-
-app.listen(port, () => {
-  console.log(`Example app listening at http://localhost:${port}`);
-})
